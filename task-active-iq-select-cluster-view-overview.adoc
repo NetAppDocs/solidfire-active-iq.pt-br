@@ -1,0 +1,26 @@
+---
+permalink: task-active-iq-select-cluster-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, cluster, information, specific 
+summary: Saiba mais sobre como visualizar informações de cluster no SolidFire Active IQ. 
+---
+= Selecione um cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode exibir informações de cluster para um cluster específico ao selecionar um cluster na lista suspensa *Selecionar um cluster*. Cada categoria de informações de cluster é apresentada em um formato de tabela ou em um formato gráfico.
+
+Saiba mais sobre as várias listas e filtros disponíveis na visão geral do cluster *Dashboard* ou no menu suspenso *Reporting* no painel lateral:
+
+* link:task-active-iq-single-cluster-view-dashboard.html["Painel de visualização de cluster único"]
+* link:task-active-iq-reporting-options.html["Opções de relatórios para um cluster"]
+
+
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

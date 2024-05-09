@@ -1,0 +1,216 @@
+---
+permalink: task-active-iq-nodes.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, nodes 
+summary: Saiba mais sobre a página ative Nodes no SolidFire Active IQ. 
+---
+= Nós
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Na página *nós*, disponível no painel lateral de um cluster selecionado, você pode exibir informações sobre os nós do cluster.
+
+Os detalhes disponíveis variam de acordo com o seu sistema:
+
+* <<Veja os detalhes do nó de storage do SolidFire>>
+* <<Veja os detalhes do nó de computação e storage do NetApp HCI>>
+
+
+
+
+== Veja os detalhes do nó de storage do SolidFire
+
+Cada nó é uma coleção de SSDs. Cada nó de storage vem com recursos de CPU, rede, cache e storage. Os recursos do nó de storage são agrupados em um cluster de nós.
+
+Na página *nodes*, a barra de informações fornece uma visão geral rápida dos seguintes dados:
+
+* MVIP: Endereço IP virtual de gerenciamento
+* ID VLAN MVIP: ID LAN virtual para o MVIP
+* SVIP: Armazenamento de endereço IP virtual
+* ID da VLAN SVIP: ID de LAN virtual para o SVIP
+
+
+
+
+=== Exibir informações sobre nós de storage
+
+As informações a seguir estão disponíveis para cada nó de storage no cluster:
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| ID | ID gerado pelo sistema para o nó. 
+
+
+| Estado  a| 
+O status do nó:
+
+* Saudável: O nó não tem erros críticos associados a ele.
+* Offline: O nó não pode ser acessado. Selecione a ligação para ver o Registo de erros.
+* Falha: Há erros associados a este nó. Selecione a ligação para ver o Registo de erros.
+
+
+
+
+| Nome | O nome do nó gerado pelo sistema. 
+
+
+| Tipo | Exibe o tipo de modelo do nó. 
+
+
+| Versão | Versão do software Element em execução no nó. 
+
+
+| Número de série | Número de série exclusivo atribuído ao nó. 
+
+
+| IP de gerenciamento | Endereço IP de gerenciamento atribuído ao nó para tarefas de administração de rede 1GbE ou 10GbE. 
+
+
+| IP do cluster | Endereço IP do cluster atribuído ao nó usado para a comunicação entre nós no mesmo cluster. 
+
+
+| Armazenamento IP | Endereço IP de armazenamento atribuído ao nó usado para descoberta de rede iSCSI e todo o tráfego de rede de dados. 
+
+
+| Taxa de transferência média durar 30 minutos | Soma de throughput médio executado nos últimos 30 minutos em relação a todos os volumes que têm esse nó como primário. 
+
+
+| Média de IOPS duram 30 min | Soma do número médio de IOPS executado nos últimos 30 minutos em relação a todos os volumes que têm esse nó como primário. 
+
+
+| Latência média (µs) duram 30 minutos | O tempo médio em microssegundos, medido nos últimos 30 minutos, para concluir as operações de leitura e gravação em todos os volumes que têm esse nó como principal. Para relatar essa métrica com base em volumes ativos, somente valores de latência não zero são usados. 
+
+
+| Função  a| 
+Identifica a função que o nó tem no cluster:
+
+* Mestre de cluster: O nó que executa tarefas administrativas em todo o cluster e contém o MVIP e o SVIP.
+* Nó do ensemble: Um nó que participa do cluster. Existem três ou cinco nós de ensemble dependendo do tamanho do cluster.
+* Fibre Channel: Um nó FC no cluster.
+* Se um nó não tiver uma função, o valor será definido como - (traço).
+
+
+|===
+
+
+== Veja os detalhes do nó de computação e storage do NetApp HCI
+
+Para nós da série H do NetApp, que compõem um sistema NetApp HCI, há dois tipos: Nós de computação e storage.
+
+Na página *nodes*, a barra de informações fornece uma visão geral rápida dos seguintes dados:
+
+* MVIP: Endereço IP virtual de gerenciamento
+* SVIP: Armazenamento de endereço IP virtual
+
+
+Saiba mais sobre como exibir informações sobre nós de storage e nós de computação em um cluster do NetApp HCI:
+
+* <<Exibir informações sobre nós de storage>>
+* <<Exibir informações sobre nós de computação>>
+
+
+
+
+=== Exibir informações sobre nós de storage
+
+Selecione *Storage* para exibir as seguintes informações sobre os nós de storage no cluster.
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| ID | ID gerado pelo sistema para o nó. 
+
+
+| Estado  a| 
+O status do nó:
+
+* Saudável: O nó não tem erros críticos associados a ele.
+* Offline: O nó não pode ser acessado. Selecione a ligação para ver o Registo de erros.
+* Falha: Há erros associados a este nó. Selecione a ligação para ver o Registo de erros.
+
+
+
+
+| Nome | O nome do nó gerado pelo sistema. 
+
+
+| Tipo | Mostra o tipo de modelo do nó. 
+
+
+| Chassis/ranhura | Número de série exclusivo atribuído ao chassi e à localização do slot do nó. 
+
+
+| Número de série | Número de série exclusivo atribuído ao nó. 
+
+
+| Versão | Versão do software Element em execução no nó. 
+
+
+| IP de gerenciamento | Endereço IP de gerenciamento atribuído ao nó para tarefas de administração de rede 1GbE ou 10GbE. 
+
+
+| Armazenamento IP | Endereço IP de armazenamento atribuído ao nó usado para descoberta de rede iSCSI e todo o tráfego de rede de dados. 
+
+
+| Média de IOPS duram 30 min | Soma do número médio de IOPS executado nos últimos 30 minutos em relação a todos os volumes que têm esse nó como primário. 
+
+
+| Taxa de transferência média durar 30 minutos | Soma de throughput médio executado nos últimos 30 minutos em relação a todos os volumes que têm esse nó como primário. 
+
+
+| Latência média (µs) duram 30 minutos | O tempo médio em microssegundos, medido nos últimos 30 minutos, para concluir as operações de leitura e gravação em todos os volumes que têm esse nó como principal. Para relatar essa métrica com base em volumes ativos, somente valores de latência não zero são usados. 
+
+
+| Função  a| 
+Identifica a função que o nó tem no cluster:
+
+* Mestre de cluster: O nó que executa tarefas administrativas em todo o cluster e contém o MVIP e o SVIP.
+* Nó do ensemble: Um nó que participa do cluster. Existem três ou cinco nós de ensemble dependendo do tamanho do cluster.
+* Se um nó não tiver uma função, o valor será definido como - (traço).
+
+
+|===
+
+
+=== Exibir informações sobre nós de computação
+
+Selecione *Compute* para exibir as seguintes informações sobre os nós de computação no cluster.
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| Host | Endereço IP do nó de computação. 
+
+
+| Estado | O valor que vem de volta da VMware. Passe o Mouse sobre isso para a descrição da VMware. 
+
+
+| Tipo | Mostra o tipo de modelo do nó. 
+
+
+| Chassi/slot | Número de série exclusivo atribuído ao chassi e à localização do slot do nó. 
+
+
+| Número de série | Número de série exclusivo atribuído ao nó. 
+
+
+| IP do vCenter | Endereço IP do vCenter Server. 
+
+
+| VMotion IP | Endereço IP de rede do VMware vMotion do nó de computação. 
+|===
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

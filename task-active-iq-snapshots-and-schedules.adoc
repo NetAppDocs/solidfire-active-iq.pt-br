@@ -1,0 +1,118 @@
+---
+permalink: task-active-iq-snapshots-and-schedules.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, snapshot, details, schedule 
+summary: Saiba mais sobre como visualizar detalhes de instantâneos e detalhes de agendamento de instantâneos no SolidFire Active IQ. 
+---
+= Instantâneos e agendas de instantâneos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Saiba mais sobre como visualizar informações sobre instantâneos e agendas de instantâneos:
+
+* <<Instantâneos>>
+* <<Programas instantâneos>>
+
+
+
+
+== Instantâneos
+
+Na página *volumes* que está disponível no painel lateral de um cluster selecionado, você pode exibir informações sobre instantâneos de volume.
+
+.Passos
+. Selecione *volumes* > *instantâneos*.
+. Em alternativa, selecione *volumes* > *volumes ativos* e, na coluna ações, selecione o image:more_information.PNG["mais informações"] ícone do volume desejado e selecione *Exibir instantâneos*.
+. (Opcional) pode exportar a lista de instantâneos como um ficheiro CSV selecionando o image:export_button.PNG["botão export (exportar)"] ícone.
+
+
+A lista a seguir descreve os detalhes disponíveis:
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| ID | Exibe a ID do instantâneo atribuída ao instantâneo. 
+
+
+| ID do volume | ID dada quando o volume foi criado. 
+
+
+| ID da conta | ID da conta atribuída ao volume. 
+
+
+| UUID | Identificador universal único. 
+
+
+| Tamanho | Tamanho do instantâneo definido pelo utilizador. 
+
+
+| Tamanho do volume | Tamanho do volume a partir do qual o instantâneo foi criado. 
+
+
+| Crie o tempo | O momento em que o snapshot foi criado. 
+
+
+| Guarde até | O dia e a hora em que o instantâneo será eliminado. 
+
+
+| ID Snapshot Grupo | O ID do grupo ao qual o instantâneo pertence se estiver agrupado juntamente com outros instantâneos de volume. 
+
+
+| Replicado  a| 
+Apresenta o estado do instantâneo no cluster remoto:
+
+* Presente: O instantâneo existe num cluster remoto.
+* Não presente: O instantâneo não existe em um cluster remoto.
+* Sincronização: O cluster de destino está replicando o snapshot no momento.
+* Excluído: O destino replicou o snapshot e, em seguida, o excluiu.
+
+
+|===
+
+
+== Programas instantâneos
+
+A partir da página *volumes* > *Snapshot Schedules* disponível no painel lateral de um cluster selecionado, é possível visualizar os detalhes da programação de instantâneos.
+
+Pode exportar a lista de agendamento de instantâneos como um ficheiro CSV selecionando o image:export_button.PNG["Botão Export (Exportar)"] ícone.
+
+A lista a seguir descreve os detalhes disponíveis:
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| ID | A ID de programação atribuída à programação. 
+
+
+| Nome | Nome atribuído pelo utilizador da programação. 
+
+
+| Frequência | A frequência em que o programa é executado. A frequência pode ser definida em horas e minutos, semanas ou meses. 
+
+
+| Recorrente | Indica se a programação é recorrente ou não. 
+
+
+| IDs de volume | As IDs de volume incluídas no instantâneo agendado. 
+
+
+| Last Run (última corrida) | A última vez que a programação foi executada. 
+
+
+| Estado da última execução | O resultado da última execução do cronograma. Valores possíveis: `Success` Ou `Error` 
+
+
+| Manualmente em pausa | Identifica se o agendamento foi pausado manualmente ou não. 
+|===
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

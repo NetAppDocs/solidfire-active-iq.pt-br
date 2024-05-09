@@ -1,0 +1,82 @@
+---
+permalink: task-active-iq-virtual-machines.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, virtual, machines, vm 
+summary: Saiba mais sobre a página máquinas virtuais no SolidFire Active IQ. 
+---
+= Máquinas virtuais
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Na página *máquinas virtuais*, disponível no painel lateral de um cluster NetApp HCI selecionado, você pode visualizar informações de status relacionadas à CPU e ao armazenamento sobre máquinas virtuais (VMs).
+
+
+NOTE: A página *máquinas virtuais* está disponível apenas em um cluster NetApp HCI.
+
+Saiba mais sobre filtragem e compreensão dos dados da VM exibidos na IU.
+
+
+
+== Ver detalhes da Máquina Virtual
+
+A página *máquinas virtuais*, disponível no painel lateral para um cluster selecionado, fornece informações sobre cada VM ativa associada ao cluster.
+
+Além das opções de filtragem convencionais disponíveis em todas as páginas do SolidFire Active IQ, a página *máquinas virtuais* tem botões de filtro rápido que podem ser selecionados para determinar os estados de disponibilidade comuns da VM.
+
+A barra de informações fornece uma visão geral rápida dos seguintes dados:
+
+* Máquinas virtuais: O número e vários estados de disponibilidade das VMs associadas ao cluster de armazenamento.
+* Status: O número de avisos ou erros para as VMs.
+* Recursos provisionados: O total de recursos de armazenamento e memória para todas as VMs associadas ao cluster de armazenamento.
+
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| Nome | O nome amigável da VM. 
+
+
+| Estado  a| 
+O status de disponibilidade da VM:
+
+* Normal: A VM está respondendo conforme esperado.
+* Aviso: Foi comunicado um aviso. Consulte o vSphere para obter mais detalhes.
+* Crítico: Foi comunicado um erro crítico. Consulte o vSphere para obter mais detalhes.
+* Desconhecido: A VM está inacessível.
+
+
+
+
+| Estado de alimentação | Indica se a VM está ligada, desligada ou suspensa. 
+
+
+| IP do vCenter | Endereço IP do vCenter Server. 
+
+
+| Número de CPUs | O número de CPUs para cada VM. 
+
+
+| Uso da memória do host | A quantidade de memória do host ESXi que está sendo usada por uma máquina virtual. 
+
+
+| Utilização da CPU | A porcentagem de CPU virtual usada ativamente como porcentagem do total de CPU disponível na VM. 
+
+
+| Capacidade utilizada | A porcentagem de recursos de storage de VM em uso. 
+
+
+| Latência do disco de pico | A latência máxima do disco detetada em milissegundos. 
+
+
+| Alarmes | O número de alarmes acionados do vSphere na VM. 
+|===
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

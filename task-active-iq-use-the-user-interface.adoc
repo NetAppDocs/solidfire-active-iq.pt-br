@@ -1,0 +1,177 @@
+---
+permalink: task-active-iq-use-the-user-interface.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, enable, reporting 
+summary: Saiba mais sobre os recursos e a funcionalidade da interface do usuário no SolidFire Active IQ. 
+---
+= Use a IU do SolidFire Active IQ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Saiba mais sobre os recursos e a funcionalidade da interface do usuário link:https://activeiq.solidfire.com/["SolidFire Active IQ (login necessário)"^]no :
+
+* <<Use filtros>>
+* <<Ordenar listas>>
+* <<Visualize gráficos e selecione intervalos de datas>>
+* <<Exportar exibições de lista e dados de relatório>>
+* <<Selecione um cluster>>
+* <<Referência do ícone>>
+* <<Fornecer feedback>>
+
+
+
+
+== Use filtros
+
+Você pode classificar e filtrar informações de lista em páginas no SolidFire Active IQ. Ao visualizar listas (como nós, unidades, volumes, etc.), você pode usar a funcionalidade de filtro para focar as informações e torná-las mais facilmente encaixadas na tela.
+
+.Passos
+. Ao visualizar informações da lista, selecione *filtro*.
+. Escolha um nome de coluna para filtrar no menu suspenso.
+. Selecione uma restrição para a coluna.
+. Introduza o texto para filtrar por.
+. Selecione *Adicionar filtro*.
++
+O sistema executa o novo filtro nas informações da lista e armazena temporariamente o novo filtro. O filtro selecionado é mostrado na parte inferior da caixa de diálogo filtro.
+
+. (Opcional) você pode adicionar outro filtro executando as seguintes etapas:
++
+.. Selecione outro título e restrição de coluna.
+.. Selecione *Adicionar filtro*.
+
+
+. (Opcional) Selecione (*x*) para remover os filtros e exibir as informações da lista não filtrada.
+
+
+
+NOTE: Algumas tabelas incluem a opção de excluir colunas da vista. Para obter melhores resultados, selecione *colunas* para confirmar que todas as colunas necessárias estão sendo exibidas ao definir filtros.
+
+
+
+== Ordenar listas
+
+Você pode classificar as informações da lista por uma ou mais colunas em determinadas páginas na IU do SolidFire Active IQ. Isto ajuda-o a organizar as informações de que necessita no ecrã.
+
+.Passos
+. Para classificar em uma única coluna, selecione o título da coluna até que as informações sejam classificadas na ordem desejada.
+. Para classificar em várias colunas, execute as seguintes etapas:
++
+.. Selecione o título da coluna da primeira coluna que deseja classificar até que as informações sejam classificadas na ordem desejada.
+.. Para adicionar uma coluna, mantenha pressionada a tecla de comando e selecione o título da coluna até que as informações sejam classificadas na ordem desejada. Você pode adicionar mais de uma coluna.
+
+
++
+Esta funcionalidade não está disponível em todas as páginas.
+
+
+
+
+
+== Visualize gráficos e selecione intervalos de datas
+
+Os gráficos e intervalos de datas no SolidFire Active IQ são perfeitamente integrados entre si. Ao selecionar um intervalo de datas, todos os gráficos nessa página ajustam-se ao intervalo selecionado. O intervalo de datas padrão exibido para cada gráfico é de sete dias.
+
+Pode selecionar um intervalo de datas na caixa pendente Calendário ou num conjunto de intervalos predefinidos. Os intervalos de datas são calculados usando a hora atual do navegador (no momento da seleção) e a quantidade de tempo configurada. Além disso, você pode selecionar um intervalo desejado escovando diretamente sobre o gráfico de barras na parte inferior. Se disponível, alterne entre gráficos selecionando os layouts de miniaturas à esquerda. Esses layouts também podem ser ocultados.
+
+Posicione o ponteiro do rato sobre uma linha de gráfico para ver detalhes pontuais.
+
+.Expanda o exemplo de gráfico
+[%collapsible]
+====
+image:graphs_and_date_ranges.PNG["Gráficos e intervalos de datas"]
+
+====
+
+
+== Exportar exibições de lista e dados de relatório
+
+Você pode exportar uma exibição de lista inteira ou dados de gráfico para um formato CSV (valores separados por vírgulas). Para algumas listas, por exemplo, cluster ou nós, você pode selecionar quais colunas são exportadas; por padrão, as colunas exibidas são selecionadas. Se houver uma determinada ordem de classificação ou se um filtro for usado para limitar as entradas exibidas, essa ordem de classificação e o filtro serão preservados no arquivo exportado.
+
+.Passos
+. Numa vista de lista ou gráfico, selecione o image:export_button.PNG["Botão Export (Exportar)"] ícone.
+
+
+
+
+== Selecione um cluster
+
+No SolidFire Active IQ, você pode exibir informações sobre um cluster individual em seu ambiente.
+
+.Passos
+. No painel do SolidFire Active IQ, selecione *Selecione um cluster*.
+. O menu suspenso lista todos os clusters disponíveis para você.
+. Use o campo de pesquisa para localizar o cluster desejado ou os clusters exibidos recentemente.
+. Selecione o nome para selecionar o cluster.
+
+
+
+
+== Referência do ícone
+
+Você pode ver os seguintes ícones ao exibir a IU do SolidFire Active IQ.
+
+[cols="25,75"]
+|===
+| Ícone | Descrição 
+
+
+ a| 
+image:refresh.PNG["Atualizar ícone"]
+| Atualizar 
+
+
+ a| 
+image:filter.PNG["Ícone de filtro"]
+| Filtro 
+
+
+ a| 
+image:export_button.PNG["Botão Export (Exportar)"]
+| Exportação 
+
+
+ a| 
+image:menu.PNG["Ícone de menu"]
+| Menu para configurações de conta, documentação, feedback, suporte e logout. 
+
+
+ a| 
+image:copy.PNG["Copiar para o ícone da área de transferência"]
+| Selecione uma vez para copiar para a área de transferência. 
+
+
+ a| 
+image:wrap_toggle.PNG["Alternar texto de atamento"] image:unwrap_toggle.PNG["Alternar texto de atamento"]
+| Alterne o botão para embrulhar e desembrulhar texto. 
+
+
+ a| 
+image:more_information.PNG["Ícone de mais informações"]
+| Mais informações. Selecione para outras opções. 
+
+
+ a| 
+image:more_details.PNG["Ícone mais detalhes"]
+| Selecione para obter mais detalhes. image:description.PNG["Descrição"] 
+|===
+
+
+== Fornecer feedback
+
+Você pode ajudar a melhorar a IU do SolidFire Active IQ e resolver quaisquer problemas de IU usando a opção de feedback de e-mail acessível em toda a IU.
+
+.Passos
+. Em qualquer página da IU, selecione o image:menu.PNG["Ícone de menu"] ícone e selecione *Feedback*.
+. Insira as informações relevantes no corpo da mensagem do e-mail.
+. Anexe quaisquer capturas de tela úteis.
+. Selecione *Enviar*.
+
+
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

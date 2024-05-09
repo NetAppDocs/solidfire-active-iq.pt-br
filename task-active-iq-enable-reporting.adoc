@@ -1,0 +1,115 @@
+---
+permalink: task-active-iq-enable-reporting.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, enable, reporting 
+summary: Saiba mais sobre como habilitar a funcionalidade de relatórios do SolidFire Active IQ no nó de gerenciamento. 
+---
+= Ativar relatórios SolidFire Active IQ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você deve habilitar a funcionalidade de relatório do SolidFire Active IQ no nó de gerenciamento, se ainda não o fez durante a instalação ou atualização, antes que o servidor SolidFire Active IQ possa receber cargas úteis de dados para um cluster a partir do nó de gerenciamento. Quando a conexão tiver sido configurada com êxito, o cluster envia informações para o servidor SolidFire Active IQ. Em seguida, você pode exibir o cluster na IU do SolidFire Active IQ, que exibe informações do cluster.
+
+
+NOTE: Os navegadores Google Chrome e Firefox são compatíveis para serem executados com o SolidFire Active IQ.
+
+.Antes de começar
+* Algumas funções no Active IQ, por exemplo, qualidade de serviço (QoS), exigem que o elemento 11,3 ou posterior funcione corretamente. Para confirmar que você tem a capacidade de usar todas as funções do Active IQ, o NetApp recomenda o seguinte:
++
+** O cluster de storage está executando o software NetApp Element 11,3 ou posterior.
+** Você implantou um nó de gerenciamento executando a versão 11,3 ou posterior.
+
+
+* Você tem acesso à Internet. O serviço coletor Active IQ não pode ser usado de sites escuros que não têm conetividade externa.
+
+
+.Passos
+. Obtenha o ID do ativo base para a instalação:
++
+.. Abra a IU da API REST do serviço de inventário no nó de gerenciamento:
++
+[listing]
+----
+https://<ManagementNodeIP>/inventory/1/
+----
+.. Selecione *autorizar* e preencha o seguinte:
++
+... Introduza o nome de utilizador e a palavra-passe do cluster.
+... Introduza a ID do cliente como `mnode-client`.
+... Selecione *autorizar* para iniciar uma sessão.
+... Feche a janela.
+
+
+.. Na IU da API REST, selecione *GET ​/installations*.
+.. Selecione *Experimente*.
+.. Selecione *Executar*.
+.. A partir do corpo de resposta do código 200, copie o `id` para a instalação.
++
+[listing, subs="+quotes"]
+----
+{
+  "installations": [
+    {
+      "_links": {
+        "collection": "https://10.111.211.111/inventory/1/installations",
+        "self": "https://10.111.217.111/inventory/1/installations/abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"
+      },
+      *"id": "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x",*
+----
++
+
+NOTE: Sua instalação tem uma configuração de ativo base que foi criada durante a instalação ou atualização.
+
+
+
+. Ativar telemetria:
++
+.. Acesse a IU da API de serviço mnode no nó de gerenciamento inserindo o endereço IP do nó de gerenciamento seguido de `/mnode`:
++
+[listing]
+----
+https://<ManagementNodeIP>/mnode
+----
+.. Selecione *autorizar* ou qualquer ícone de cadeado e complete o seguinte:
++
+... Introduza o nome de utilizador e a palavra-passe do cluster.
+... Introduza a ID do cliente como `mnode-client`.
+... Selecione *autorizar* para iniciar uma sessão.
+... Feche a janela.
+
+
+.. Configurar o ativo base:
++
+... Selecione *PUT /assets/(Asset_id)*.
+... Selecione *Experimente*.
+... Digite o seguinte na carga JSON:
++
+[listing]
+----
+{
+"telemetry_active": true
+"config": {}
+}
+----
+... Insira o ID base da etapa anterior em *ASSET_ID*.
+... Selecione *Executar*.
++
+O serviço Active IQ é reiniciado automaticamente sempre que os ativos são alterados. Modificar ativos resulta em um curto atraso antes que as configurações sejam aplicadas.
+
+
+
+
+
+
+
+. Faça login link:https://activeiq.solidfire.com/["SolidFire Active IQ"^]e confirme se você pode visualizar os clusters.
+
+
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

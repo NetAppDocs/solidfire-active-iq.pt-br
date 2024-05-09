@@ -1,0 +1,223 @@
+---
+permalink: task-active-iq-virtual-volumes.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, virtual, volumes 
+summary: Saiba mais sobre a página volumes virtuais no SolidFire Active IQ. 
+---
+= Volumes virtuais
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Na página *Vols*, disponível no painel lateral de um cluster selecionado, você pode exibir informações sobre volumes virtuais e seus contentores de armazenamento associados, endpoints de protocolo, ligações e hosts.
+
+Saiba mais sobre as tarefas relacionadas ao Vols:
+
+* <<Volumes virtuais>>
+* <<Contêineres de armazenamento>>
+* <<Pontos finais do protocolo>>
+* <<Hosts>>
+* <<Ligações>>
+
+
+
+
+== Volumes virtuais
+
+A página *Vols* > *volumes virtuais* de um cluster selecionado fornece informações sobre cada volume virtual ativo no cluster.
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| ID do volume | O ID do volume subjacente. 
+
+
+| ID Snapshot | A ID do instantâneo do volume subjacente. O valor é zero se o volume virtual não representar um instantâneo. 
+
+
+| ID de volume Virtual Principal | O ID de volume virtual do volume virtual pai. Se o ID for todos zeros, o volume virtual é independente sem nenhum link para um pai. 
+
+
+| ID de volume virtual | O identificador único universal do volume virtual. 
+
+
+| Nome | O nome atribuído ao volume virtual. 
+
+
+| Tipo de SO convidado | Sistema operacional associado ao volume virtual. 
+
+
+| Tipo | O tipo de volume virtual: Config, Data, Memory, Swap ou outro. 
+
+
+| Acesso | As permissões de leitura/gravação atribuídas ao volume virtual. 
+
+
+| Tamanho | O tamanho do volume virtual em gigabytes (GB) ou Gibibytes (GiB). 
+
+
+| Capacidade utilizada  a| 
+Capacidade atual utilizada do volume:
+
+* Verde: Até 80%
+* Amarelo acima de 80%
+* Vermelho acima de 95%
+
+
+
+
+| Snapshot | O número de instantâneos associados. Selecione o número para vincular aos detalhes da cópia instantânea. 
+
+
+| IOPS mín | A configuração mínima de QoS de IOPS do volume virtual. 
+
+
+| IOPS máx | A configuração máxima de QoS de IOPS do volume virtual. 
+
+
+| IOPS de explosão | A configuração de QoS de pico máximo do volume virtual. 
+
+
+| VMW_VmID | As informações nos campos anteriores a "VMW_" são definidas pela VMware. Consulte a documentação da VMware para obter descrições. 
+
+
+| Crie o tempo | A hora em que a tarefa de criação de volume virtual foi concluída. 
+
+
+| Ações | Selecione o menu suspenso vertical para obter mais detalhes sobre um volume virtual individual. 
+|===
+
+
+== Contêineres de armazenamento
+
+Na página *Vols* > *Storage Containers* para um cluster selecionado, você pode exibir as seguintes informações para todos os contentores de armazenamento ativo no cluster.
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| ID da conta | O ID da conta associada ao contentor de armazenamento. 
+
+
+| Nome | O nome do recipiente de armazenamento. 
+
+
+| Estado  a| 
+O status do recipiente de armazenamento:
+
+* Ativo: O recipiente de armazenamento está em uso.
+* Bloqueado: O recipiente de armazenamento está bloqueado.
+
+
+
+
+| Tipo PE | Indica o tipo de ponto de extremidade do protocolo (SCSI é o único protocolo disponível para o software Element). 
+
+
+| ID do recipiente de armazenamento | O identificador exclusivo universal (UUID) do contentor de armazenamento de volume virtual. 
+
+
+| Volumes virtuais ativos | O número de volumes virtuais ativos associados ao contentor de storage. 
+|===
+
+
+== Pontos finais do protocolo
+
+A página *VVols* > *Protocol Endpoints* do cluster selecionado fornece informações de endpoint do protocolo, como ID do provedor principal, ID do provedor secundário e ID do endpoint do protocolo.
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| Código Fornecedor Principal | A ID do provedor de endpoint de protocolo primário. 
+
+
+| Código Fornecedor secundário | A ID do provedor de endpoint de protocolo secundário. 
+
+
+| ID do ponto final do protocolo | O UUID do endpoint do protocolo. 
+
+
+| Estado de ponto final do protocolo  a| 
+O estado do ponto de extremidade do protocolo:
+
+* Ativo: O ponto final do protocolo está em uso.
+* Start (Iniciar): O ponto final do protocolo está a ser iniciado.
+* Failover: O ponto final do protocolo falhou.
+* Reservado: O ponto final do protocolo é reservado.
+
+
+
+
+| Tipo de fornecedor | O tipo do provedor do ponto de extremidade do protocolo: Primário ou secundário. 
+
+
+| ID DO DISPOSITIVO NAA SCSI | O identificador de dispositivo SCSI exclusivo globalmente para o ponto de extremidade do protocolo no formato estendido registrado IEEE NAA. 
+|===
+
+
+== Hosts
+
+A página *Vols* > *hosts* de um cluster selecionado fornece informações sobre hosts VMware ESXi que hospedam volumes virtuais.
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| ID do host | O UUID para o host ESXi que hospeda volumes virtuais e é conhecido pelo cluster. 
+
+
+| Ligações | IDs de vinculação para todos os volumes virtuais vinculados pelo host ESXi. 
+
+
+| ID do cluster do ESX | O ID do cluster de host vSphere ou o vCenter GUID. 
+
+
+| Iniciador IQNs | IQNs do iniciador para o host de volume virtual. 
+
+
+| IDs de endpoints do protocolo SolidFire | Os endpoints do protocolo que estão atualmente visíveis para o host ESXi. 
+|===
+
+
+== Ligações
+
+A página *Vols* > *Bindings* de um cluster selecionado fornece informações de vinculação sobre cada volume virtual.
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| ID do host | O UUID para o host ESXi que hospeda volumes virtuais e é conhecido pelo cluster. 
+
+
+| ID do ponto final do protocolo | O UUID do endpoint do protocolo. 
+
+
+| Ponto final do protocolo no ID da banda | A ID do dispositivo SCSI NAA do ponto de extremidade do protocolo. 
+
+
+| Tipo de ponto final do protocolo | Indica o tipo de ponto de extremidade do protocolo (SCSI é o único protocolo disponível para o software Element). 
+
+
+| ID de encadernação VVol | O UUUID de vinculação do volume virtual. 
+
+
+| ID VVol | O UUID do volume virtual. 
+
+
+| ID secundária VVol | O ID secundário do volume virtual que é um ID LUN de segundo nível SCSI. 
+|===
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

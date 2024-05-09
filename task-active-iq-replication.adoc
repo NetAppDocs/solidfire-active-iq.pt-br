@@ -1,0 +1,192 @@
+---
+permalink: task_active_iq_replication.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, replication 
+summary: Saiba mais sobre a página replicação no SolidFire Active IQ. 
+---
+= Replicação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+A página *replicação*, disponível no painel lateral para um cluster selecionado, fornece informações sobre pares de cluster e pares de volumes.
+
+Saiba mais sobre as páginas pares de cluster e pares de volumes:
+
+* <<cluster_pairs,Pares de cluster>>
+* <<volume_pairs,Pares de volume>>
+* <<snapmirror_endpoints,Pontos de extremidade SnapMirror>>
+* <<snapmirror_relationships,Relacionamentos com SnapMirror>>
+
+
+
+
+== Pares de cluster
+
+Na página *Replication* > *Cluster Pairs* para um cluster selecionado, você pode exibir as seguintes informações sobre os pares de cluster.
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| ID par cluster | Número de identificação dado quando o par de cluster foi criado. 
+
+
+| Nome do cluster remoto | Nome do cluster remoto do par. 
+
+
+| MVIP remoto | Gerenciamento IP virtual do cluster remoto. 
+
+
+| Replicação de volumes | Representa o número de volumes replicados no cluster emparelhado. 
+
+
+| Estado | Estado do par de cluster. 
+
+
+| UUID | Identificador universal único. 
+|===
+
+
+== Pares de volume
+
+Na página *replicação* > *pares de volume* para um cluster selecionado, você pode exibir as seguintes informações sobre pares de volume.
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| ID do volume | Número de identificação dado quando o volume foi criado. 
+
+
+| ID da conta | ID da conta atribuída ao volume. 
+
+
+| Estado do volume | Estado do volume de replicação. 
+
+
+| Modo de replicação | Tipo de modo selecionado para o par de volume. 
+
+
+| Direção  a| 
+Indica a direção dos dados do volume:
+
+* Fonte: Indica que os dados estão sendo gravados em um destino fora do cluster.
+* Destino: Indica que os dados estão sendo gravados no volume local de uma fonte externa.
+
+
+
+
+| Atraso assíncrono  a| 
+Período de tempo desde que o volume foi sincronizado pela última vez com o cluster remoto. Se o volume não estiver emparelhado, isso é nulo.
+
+
+NOTE: Um volume de destino em um estado de replicação ativa sempre tem um atraso de Async de 0 (zero). Os volumes de destino são compatíveis com o sistema durante a replicação e assumem que o atraso assíncrono é preciso em todos os momentos.
+
+
+
+| Cluster remoto | Nome do cluster remoto no qual o volume reside. 
+
+
+| ID de volume remoto | ID do volume do volume no cluster remoto. 
+|===
+
+
+== Pontos de extremidade SnapMirror
+
+Na página *Replication* > *SnapMirror Endpoints* para um cluster selecionado, pode visualizar as seguintes informações sobre os endpoints do SnapMirror.
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| ID do endpoint | O número de identificação do endpoint. 
+
+
+| Nome do cluster remoto | Nome do cluster remoto do par. 
+
+
+| IP de gerenciamento de clusters | Endereço IP de gerenciamento de cluster. 
+
+
+| IPS | O intervalo de endereços IP de rede virtual usado para a rede virtual. 
+
+
+| Relações | O número de relacionamentos configurados para um endpoint. 
+
+
+| Estado | Isso se refere a se o endpoint está conetado ou não. Tem um valor de *Connected* ou *Disconnected*. 
+|===
+
+
+== Relacionamentos com SnapMirror
+
+Na página *replicação* > *relacionamentos SnapMirror* para um cluster selecionado, você pode exibir as seguintes informações sobre relacionamentos SnapMirror.
+
+[cols="30,70"]
+|===
+| Rumo | Descrição 
+
+
+| ID do endpoint | O número de identificação do endpoint. 
+
+
+| Volume de origem | A ID do volume da fonte. 
+
+
+| Cluster de destino | O nome do cluster de destino na relação SnapMirror. 
+
+
+| Volume de destino | O nome do volume de destino na relação SnapMirror. 
+
+
+| Estado  a| 
+O estado da relação do espelho. Pode ter três valores possíveis:
+
+* Não inicializado: O volume de destino não foi inicializado.
+* Snapmirror: O volume de destino é inicializado e está pronto para receber atualizações do SnapMirror.
+* Desfeito: O volume de destino está em um estado de leitura e gravação e os snapshots estão presentes.
+
+
+
+
+| Estado  a| 
+Se o relacionamento estiver saudável atualmente, ele pode ter um valor de *saudável* ou *insalubre*.
+
+
+NOTE: Quando uma atualização manual ou agendada falhar ou for abortada, ou a última atualização agendada for atrasada, isso pode resultar em um valor *insalubre*. O campo *Detalhes* após o status exibe o motivo do status *não saudável*.
+
+
+
+| Tipo de relacionamento  a| 
+O tipo de relação SnapMirror.
+
+
+NOTE: Nos sistemas SolidFire, esta opção está sempre definida como `extended_data_protection`. Os sistemas NetApp têm outros tipos de relações válidas que não se aplicam no caso de sistemas SolidFire.
+
+
+
+| Estado  a| 
+O status do cluster:
+
+* Integridade: O cluster não tem erros críticos associados a ele.
+* Offline: Não é possível aceder ao cluster. Selecione a ligação para ver o Registo de erros.
+* Falha: Há erros associados a este cluster. Selecione a ligação para ver o Registo de erros.
+
+
+
+
+| Detalhes | Informações que ajudam a identificar o relacionamento do SnapMirror. 
+|===
+
+
+== Encontre mais informações
+
+* https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]
+* https://docs.netapp.com/us-en/ontap/element-replication/index.html["Replicação entre o software NetApp Element e o ONTAP"^]
+

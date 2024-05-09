@@ -1,0 +1,25 @@
+---
+permalink: task-active-iq-recommendations.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, qos, recommendations, quality, of, service 
+summary: Saiba mais sobre a página de recomendações de QoS no SolidFire Active IQ. 
+---
+= Recomendações
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+A página *Gerenciamento de QoS* > *recomendações*, disponível no painel lateral de um cluster selecionado, fornece recomendações diárias de qualidade de serviço (QoS) para um cluster com base em dados de desempenho recentes. As recomendações de QoS são compatíveis apenas para clusters no software Element 11.x ou posterior.
+
+A SolidFire Active IQ faz recomendações de desempenho com base nos dados de estatísticas de volume para atividades recentes. As recomendações se concentram em IOPS máximo e mínimo garantido de QoS para um volume e só são visíveis na IU quando melhorias no cluster podem ser necessárias.
+
+
+
+== Encontre mais informações
+
+* https://docs.netapp.com/us-en/element-software/concepts/concept_data_manage_volumes_solidfire_quality_of_service.html["Desempenho e QoS de um cluster de storage SolidFire"^]
+* https://docs.netapp.com/us-en/element-software/hccstorage/task-hcc-qos-policies.html["Criar e gerenciar políticas de QoS de volume"^]
+* https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]
+

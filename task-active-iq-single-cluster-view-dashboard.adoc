@@ -1,0 +1,122 @@
+---
+permalink: task-active-iq-single-cluster-view-dashboard.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, dashboard, single, cluster 
+summary: Saiba mais sobre a página Painel de um cluster selecionado no SolidFire Active IQ. 
+---
+= Painel de visualização de cluster único
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Na página *Dashboard* de um cluster selecionado, você pode visualizar detalhes de alto nível do cluster, incluindo desempenho, capacidade e utilização de computação.
+
+Selecione o menu suspenso *Mostrar Detalhes* para exibir mais informações sobre o cluster ou selecione o  ícone ao lado de um cabeçalho para obter informações mais detalhadas sobre image:more_details.PNG["Mais detalhes"]relatórios. Você também pode mover o ponteiro do Mouse sobre linhas de gráfico e dados de relatórios para exibir detalhes adicionais.
+
+Os detalhes disponíveis variam de acordo com o seu sistema:
+
+* <<Sistema somente de storage>>
+* <<Visão geral do sistema NetApp HCI>>
+
+
+
+
+== Sistema somente de storage
+
+Para uma solução baseada em armazenamento SolidFire, você pode exibir detalhes e informações de desempenho específicas do cluster quando selecionar *Mostrar detalhes* na página *Painel*.
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| Barra de informações | Esta barra superior fornece uma visão geral rápida do estado atual do cluster selecionado. A barra mostra o número de nós, o número de volumes, detalhes de falhas, estatísticas em tempo real sobre eficiência e o status sobre a capacidade de bloco e metadados. Os links desta barra são abertos para os dados correspondentes na IU. 
+
+
+| Detalhes do cluster  a| 
+Expanda a barra de informações selecionando *Mostrar Detalhes* para mostrar estes valores:
+
+* Versão do elemento
+* Sessões iSCSI
+* Sessões Fibre Channel
+* Total máximo de IOPS configurado
+* Total máximo de IOPS
+* Tipos de nó
+* Criptografia em repouso
+* Vvols
+* Total mínimo de IOPS configurado
+
+
+
+
+| Desempenho | Este gráfico mostra o uso de IOPS e taxa de transferência. 
+
+
+| Capacidade  a| 
+Isso mostra a integridade e a plenitude do cluster da instalação:
+
+* Provisionado: A capacidade total de todos os volumes criados no sistema.
+* Físico: A quantidade total de capacidade física (capacidade total de dados de bloco) no sistema para que os dados sejam armazenados (depois de todas as eficiências serem aplicadas).
+* Capacidade de bloco: A quantidade de capacidade de dados de bloco atualmente em uso.
+* Capacidade dos metadados: A quantidade de capacidade dos metadados atualmente em uso.
+* Eficiência: A quantidade de eficiências que o sistema está vendo devido à compactação, deduplicação e thin Provisioning.
+
+
+|===
+
+
+== Visão geral do sistema NetApp HCI
+
+Para uma solução baseada em NetApp HCI, você pode exibir detalhes e informações de desempenho específicas do cluster quando selecionar *Mostrar detalhes* na página *Painel*.
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| Barra de informações | Esta barra superior fornece uma visão geral rápida do estado atual do cluster selecionado. A barra mostra o número de nós de computação e storage, o status da computação, o status do storage, o número de máquinas virtuais e o número de volumes associados ao sistema NetApp HCI. Os links desta barra são abertos para os dados correspondentes na IU. 
+
+
+| Detalhes da instalação  a| 
+Expanda a barra de informações selecionando *Mostrar Detalhes* para mostrar estes valores:
+
+* Versão do elemento
+* Hipervisor
+* Instância do vCenter associada
+* Data center associado
+* Total máximo de IOPS configurado
+* Total máximo de IOPS
+* Tipos de nós de computação
+* Tipos de nós de storage
+* Criptografia em repouso
+* Vvols
+* Sessões iSCSI
+* Total mínimo de IOPS configurado
+
+
+
+
+| Utilização de computação | O uso da CPU e da memória são representados neste gráfico. 
+
+
+| Capacidade de storage  a| 
+Isso mostra a integridade e a plenitude do cluster da instalação:
+
+* Provisionado: A capacidade total de todos os volumes criados no sistema.
+* Físico: A quantidade total de capacidade física (capacidade total de dados de bloco) no sistema para que os dados sejam armazenados (depois de todas as eficiências serem aplicadas).
+* Capacidade de bloco: A quantidade de capacidade de dados de bloco atualmente em uso.
+* Capacidade dos metadados: A quantidade de capacidade dos metadados atualmente em uso.
+* Eficiência: A quantidade de eficiências que o sistema está vendo devido à compactação, deduplicação e thin Provisioning.
+
+
+
+
+| Desempenho de storage | IOPS e taxa de transferência são representados neste gráfico. 
+|===
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

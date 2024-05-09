@@ -1,0 +1,83 @@
+---
+settings:
+  name: SolidFire Active IQ
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: pt-br,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: NetApp SolidFire Active IQ
+    url: "/index.html"
+  - title: Comece a usar o SolidFire Active IQ
+    entries:
+    - title: Visão geral
+      url: "/task-active-iq-get-started-overview.html"
+    - title: Saiba mais sobre o SolidFire Active IQ
+      url: "/concept-active-iq-learn-about-active-iq.html"
+    - title: Ativar relatórios SolidFire Active IQ
+      url: "/task-active-iq-enable-reporting.html"
+    - title: Use a IU do SolidFire Active IQ
+      url: "/task-active-iq-use-the-user-interface.html"
+  - title: Gerenciar o SolidFire Active IQ
+    entries:
+    - title: Visão geral
+      url: "/task-active-iq-manage-overview.html"
+    - title: Vista todos os clusters
+      entries:
+      - title: Visão geral
+        url: "/task-active-iq-all-clusters-view-overview.html"
+      - title: Todos os clusters View dashboard
+        url: "/task-active-iq-all-clusters-view-dashboard.html"
+      - title: Alertas
+        url: "/task-active-iq-alerts.html"
+      - title: Licenciamento de capacidade
+        url: "/task-active-iq-capacity-licensing.html"
+      - title: Capacidade a termo
+        url: "/task-active-iq-term-capacity.html"
+    - title: Selecione um cluster
+      entries:
+      - title: Visão geral
+        url: "/task-active-iq-select-cluster-overview.html"
+      - title: Painel de visualização de cluster único
+        url: "/task-active-iq-single-cluster-view-dashboard.html"
+      - title: Relatórios
+        url: "/task-active-iq-reporting-options.html"
+    - title: Nós
+      url: "/task-active-iq-nodes.html"
+    - title: Unidades
+      url: "/task_active_iq_drives.html"
+    - title: Volumes
+      entries:
+      - title: Visão geral
+        url: "/task_active_iq_volumes_overview.html"
+      - title: Volumes ativos
+        url: "/task-active-iq-active-volumes.html"
+      - title: Instantâneos e agendas de instantâneos
+        url: "/task-active-iq-snapshots-and-schedules.html"
+    - title: Replicação
+      url: "/task_active_iq_replication.html"
+    - title: Volumes virtuais
+      url: "/task-active-iq-virtual-volumes.html"
+    - title: Gerenciamento de QoS
+      entries:
+      - title: Visão geral
+        url: "/task-active-iq-qos-management-overview.html"
+      - title: Recomendações
+        url: "/task-active-iq-recommendations.html"
+      - title: Regulagem do nó
+        url: "/task-active-iq-throttling.html"
+      - title: Volumes mais movimentados
+        url: "/task-active-iq-busiest-volumes.html"
+    - title: Máquinas virtuais
+      url: "/task-active-iq-virtual-machines.html"
+    - title: Alarmes da VMware
+      url: "/task-active-iq-vmware-alarms.html"
+    - title: Visualização de todos os nós
+      url: "/task-active-iq-all-nodes-view.html"
+  - title: Solução de problemas e suporte
+    url: "/task-active-iq-troubleshoot-support.html"
+  - title: Avisos legais
+    url: "/legal-notices.html"

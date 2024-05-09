@@ -1,0 +1,52 @@
+---
+permalink: concept-active-iq-learn-about-active-iq.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, learn 
+summary: Saiba mais sobre o SolidFire Active IQ. 
+---
+= Saiba mais sobre o SolidFire Active IQ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Antes de começar a usar o SolidFire Active IQ, você deve estar ciente de como o SolidFire Active IQ funciona e quais informações ele coleta.
+
+
+
+== Como o SolidFire Active IQ funciona
+
+Serviços como coletor e telemetria são executados em um nó de gerenciamento. Esses serviços são configurados com acesso somente leitura a um cluster e fazem chamadas de API para um cluster de forma programada para reunir as principais métricas de desempenho, capacidade e integridade. Essas informações são carregadas para o banco de dados da nuvem do SolidFire Active IQ usando HTTPS, onde são processadas e disponibilizadas a você e ao suporte da NetApp por meio da interface do SolidFire Active IQ. Você pode visualizar as cargas úteis de API mais recentes e os intervalos de coleta recebidos para um cluster na IU do SolidFire Active IQ fazendo login usando suas credenciais SSO e selecionando *coleção de API* no menu suspenso *relatórios*.
+
+link:https://activeiq.solidfire.com/["Access SolidFire Active IQ (login necessário)"^]
+
+
+
+== Informações coletadas pela SolidFire Active IQ
+
+O SolidFire Active IQ coleta informações sobre volumes, clusters, nós, performance e configurações:
+
+* IDs de recursos, como volume, snapshots e IDs de nó de conta
+* Dados de performance e capacidade para clusters e volumes
+* Histórico de erros e eventos
+* Versões de software NetApp HCI e Element
+* Configurações de qualidade do serviço (QoS)
+* Detalhes do volume, como tamanho, data de criação, e assim por diante
+* Configurações de grupo e sessão de acesso ao volume
+* Configurações de rede de nós e cluster
+
+
+A SolidFire Active IQ não coleta as seguintes informações confidenciais do cliente:
+
+* Dados reais do utilizador final
+* Palavras-passe
+* Segredos do CHAP (Challenge-Handshake Authentication Protocol)
+* Informações de usuário administrativo do cluster
+
+
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

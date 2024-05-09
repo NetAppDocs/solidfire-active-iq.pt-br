@@ -1,0 +1,27 @@
+---
+permalink: task-active-iq-qos-management-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, nodes 
+summary: Saiba mais sobre a página de gerenciamento de QoS no SolidFire Active IQ. 
+---
+= Gerenciamento de QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Na página *Gerenciamento de QoS*, disponível no painel lateral de um cluster selecionado, você pode exibir informações sobre recomendações de QoS, limitação e volumes para os nós em um cluster.
+
+Saiba mais sobre como exibir informações sobre recomendações de QoS, limitação e volumes para um nó selecionado:
+
+* link:task-active-iq-recommendations.html["Recomendações"]
+* link:task-active-iq-throttling.html["Regulagem do nó"]
+* link:task-active-iq-busiest-volumes.html["Volumes mais movimentados"]
+
+
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

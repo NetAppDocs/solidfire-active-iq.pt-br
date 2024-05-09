@@ -1,0 +1,36 @@
+---
+indexpage:
+  title: NetApp SolidFire Active IQ
+  summary: O NetApp SolidFire Active IQ é uma ferramenta baseada na Web que fornece
+    visualizações históricas continuamente atualizadas de estatísticas em todo o cluster.
+    A ferramenta SolidFire Active IQ torna a capacidade e o desempenho de monitoramento
+    fáceis e acessíveis de qualquer lugar.
+  keywords: solidfire, active iq, element software, netapp hci
+  lead: O NetApp SolidFire Active IQ é uma ferramenta baseada na Web que fornece visualizações
+    históricas continuamente atualizadas de estatísticas em todo o cluster. Você pode
+    configurar notificações para alertá-lo sobre eventos, limites ou métricas especificados
+    em um cluster para que eles possam ser resolvidos rapidamente quando surgirem.
+    A ferramenta Active IQ torna o monitoramento de capacidade e desempenho, além
+    de ser informada sobre a integridade do cluster, fácil e acessível de qualquer
+    lugar.
+  tiles:
+  - title: Use a ferramenta SolidFire Active IQ
+    links:
+    - title: Comece agora
+      url: "/task-active-iq-get-started-overview.html"
+    - title: Gerenciar o SolidFire Active IQ
+      url: "/task-active-iq-manage-overview.html"
+  - title: Documentação do produto
+    links:
+    - title: Software SolidFire e Element
+      url: https://docs.netapp.com/us-en/element-software/index.html
+    - title: NetApp HCI
+      url: https://docs.netapp.com/us-en/hci/index.html
+    - title: Documentação do produto NetApp
+      url: https://www.netapp.com/support-and-training/documentation
+  - title: Solucionar problemas
+    links:
+    - title: Solucionar problemas
+      url: "/task-active-iq-troubleshoot-support.html"
+    - title: Entre em Contato com o suporte técnico
+      url: https://mysupport.netapp.com/site/global/dashboard

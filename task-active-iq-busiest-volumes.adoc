@@ -1,0 +1,52 @@
+---
+permalink: task-active-iq-busiest-volumes.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, volumes, busiest 
+summary: Saiba mais sobre a página volumes mais movimentados do SolidFire Active IQ. 
+---
+= Volumes mais movimentados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Na página *Gerenciamento de QoS* > *volumes mais movimentados*, disponível no painel lateral de um cluster selecionado, você pode exibir os dez volumes com a taxa de transferência mais alta para um nó selecionado e intervalo de tempo no cluster.
+
+Saiba mais sobre como visualizar as informações de volume mais movimentadas:
+
+* <<Visualize gráficos e selecione intervalos de datas>>
+* <<Exportar dados do nó mais ativos>>
+
+
+
+
+== Visualize gráficos e selecione intervalos de datas
+
+Depois de selecionar o nó na lista suspensa, os dez volumes com a taxa de transferência mais alta nesse nó são exibidos. Para cada volume, você pode visualizar os gráficos *throughput*, *Average IO size*, *IOPS* e *latência*; para ver o último gráfico, talvez seja necessário rolar a página para baixo. Para alternar entre volumes, selecione os layouts de miniaturas à esquerda. Quando você seleciona um nó diferente, esses gráficos mudam para o nó recém-selecionado.
+
+Os gráficos e intervalos de datas no SolidFire Active IQ são perfeitamente integrados entre si. Ao selecionar um intervalo de datas, os gráficos nessa página ajustam-se ao intervalo selecionado. O intervalo de datas padrão exibido para cada gráfico é de sete dias. Pode selecionar um intervalo de datas na caixa pendente Calendário ou num conjunto de intervalos predefinidos. Você também pode selecionar um intervalo desejado escovando diretamente sobre o gráfico de barras na parte inferior. Os intervalos de datas são calculados usando a hora atual do navegador (no momento da seleção) e a quantidade de tempo configurada. Quando você altera o intervalo de datas selecionado para um nó, os dez volumes mais movimentados exibidos também podem mudar.
+
+.Expanda o exemplo de gráfico
+[%collapsible]
+====
+image:busiest_volumes.PNG["Visor gráfico para volumes mais movimentados"]
+
+====
+Posicione o ponteiro do Mouse em qualquer ponto do gráfico para ver detalhes pontuais para as operações de leitura, gravação e total. Se um volume não estiver presente no nó para parte do intervalo de tempo selecionado, ele será representado por uma linha pontilhada
+
+
+
+== Exportar dados do nó mais ativos
+
+Você pode exportar dados de gráfico para um formato CSV (valores separados por vírgula). Apenas as informações apresentadas no gráfico são exportadas.
+
+.Passos
+. Numa vista de lista ou gráfico, selecione o image:export_button.PNG["Botão Export (Exportar)"] ícone.
+
+
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

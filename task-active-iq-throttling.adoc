@@ -1,0 +1,66 @@
+---
+permalink: task-active-iq-throttling.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, nodes, throttling 
+summary: Saiba mais sobre a página de limitação de nó no SolidFire Active IQ. 
+---
+= Regulagem do nó
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Na página *Gerenciamento de QoS* > *limitação de nó*, disponível no painel lateral de um cluster selecionado, você pode exibir a limitação de porcentagem para os nós no cluster. Os nós são listados como layouts de miniaturas no lado esquerdo da tela e são ordenados dependendo do grau de limitação para um intervalo de tempo selecionado.
+
+Saiba mais sobre como visualizar informações de limitação de nó:
+
+* <<Visualize gráficos e selecione intervalos de datas>>
+* <<Exportar dados de limitação do nó>>
+
+
+
+
+== Visualize gráficos e selecione intervalos de datas
+
+Os gráficos e intervalos de datas no SolidFire Active IQ são perfeitamente integrados entre si. Ao selecionar um intervalo de datas, os gráficos *Node throttling* e *Total volume throughput* nessa página se ajustam ao intervalo selecionado. O intervalo de datas padrão exibido para cada gráfico é de sete dias. Quando você seleciona um nó nas guias de seleção de gráfico, esses gráficos mudam para o nó recém-selecionado.
+
+Pode selecionar um intervalo de datas na caixa pendente Calendário ou num conjunto de intervalos predefinidos. Os intervalos de datas são calculados usando a hora atual do navegador (no momento da seleção) e a quantidade de tempo configurada. Você também pode selecionar um intervalo desejado escovando diretamente sobre o gráfico de barras na parte inferior. Para alternar entre gráficos, selecione os esquemas de miniaturas à esquerda.
+
+O gráfico *Node throttling* exibe a regulagem do nó durante o período de tempo selecionado com base nas configurações de IOPS mínimo e máximo para os volumes hospedados no nó selecionado. A cor representa a quantidade de estrangulamento:
+
+* Verde: O nó não está sendo estrangulado. Os volumes têm permissão para executar até o máximo de IOPs configurados.
+* Amarelo: O nó está passando por limitação limitada. Os volumes são reduzidos em relação à configuração máxima de IOPs, mas ainda mantêm o desempenho em ou acima da configuração mínima de IOPS.
+* Vermelho: O nó está passando por alta limitação. Quando os volumes são reduzidos de forma mais grave, o desempenho pode ficar abaixo da configuração de IOPs mínima.
+
+
+O gráfico *Total volume throughput* exibe a soma da taxa de transferência para os volumes primários de um nó selecionado. O gráfico mostra a soma da taxa de transferência de leitura e gravação de volume. Ele não inclui metadados ou outro tráfego de nós. Isso também leva em consideração quando os volumes estão presentes em um nó, o que resulta em uma queda na taxa de transferência quando os volumes são transferidos de um nó.
+
+.Expanda o exemplo de gráfico
+[%collapsible]
+====
+image:node_throttling_range.PNG["Exibição gráfica para limitação de nó"]
+
+====
+Posicione o ponteiro do rato em qualquer ponto do gráfico para ver detalhes pontuais.
+
+link:task-active-iq-qos-recommendations.html["Saiba mais sobre as recomendações de QoS para um cluster"].
+
+
+NOTE: A partir da página de limitação de nó, você pode determinar se há uma interrupção de QoS em um cluster de armazenamento, consulte isso https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_to_check_for_QoS_pushback_in_Element_Software["Artigo da KB"^] para obter informações.
+
+
+
+== Exportar dados de limitação do nó
+
+Você pode exportar dados de gráfico para um formato CSV (valores separados por vírgula). Apenas as informações apresentadas no gráfico são exportadas.
+
+.Passos
+. Numa vista de lista ou gráfico, selecione o image:export_button.PNG["Botão Export (Exportar)"] ícone.
+
+
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

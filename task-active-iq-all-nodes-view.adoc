@@ -1,0 +1,181 @@
+---
+permalink: task-active-iq-all-nodes-view.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, nodes, all, throttling, throttled 
+summary: Saiba mais sobre a página visualização de todos os nós no SolidFire Active IQ. 
+---
+= Visualização de todos os nós
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode exibir informações sobre todos os nós de uma empresa, incluindo nós estrangulados, quando você seleciona o nome da empresa na lista suspensa *todos os nós Visualizar*. Depois de selecionar o nome da empresa, ele substitui *All Nodes View* na barra de navegação superior.
+
+
+NOTE: Se sua conta do SolidFire Active IQ tiver apenas um nome de empresa associado a ela, as páginas *todos os nós* e *nós estrangulados*, disponíveis no painel lateral, serão padrão para o nome da empresa.
+
+Saiba mais sobre as páginas todos os nós e nós estrangulados:
+
+* <<Exibir informações sobre todos os nós>>
+* <<Exibir informações sobre nós estrangulados>>
+
+
+
+
+== Exibir informações sobre todos os nós
+
+Na página *todos os nós*, disponível no painel lateral, você pode exibir informações sobre todos os nós da empresa selecionada.
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| ID do cluster | Número de cluster atribuído quando o cluster é criado. 
+
+
+| Cluster | Nome atribuído ao cluster. 
+
+
+| ID de nó | ID gerado pelo sistema para o nó. 
+
+
+| Estado  a| 
+O status do nó:
+
+* Saudável: O nó não tem erros críticos associados a ele.
+* Offline: O nó não pode ser acessado. Selecione a ligação para ver o Registo de erros.
+* Falha: Há erros associados a este nó. Selecione a ligação para ver o Registo de erros.
+
+
+
+
+| Nome | O nome do nó gerado pelo sistema. 
+
+
+| Tipo | Mostra o tipo de modelo do nó. 
+
+
+| Número de série | Número de série exclusivo atribuído ao nó. 
+
+
+| Versão | Versão do software Element em execução no nó. 
+
+
+| IP de gerenciamento | Endereço IP de gerenciamento atribuído ao nó para tarefas de administração de rede 1GbE ou 10GbE. 
+
+
+| Armazenamento IP | Endereço IP de armazenamento atribuído ao nó usado para descoberta de rede iSCSI e todo o tráfego de rede de dados. 
+
+
+| Função  a| 
+Identifica a função que o nó tem no cluster:
+
+* Mestre do cluster: O nó que executa tarefas administrativas em todo o cluster e contém o endereço IP virtual de gerenciamento e o endereço IP virtual de armazenamento.
+* Nó do ensemble: Um nó que participa do cluster. Existem três ou cinco nós de ensemble dependendo do tamanho do cluster.
+* Fibre Channel: Um nó FC no cluster.
+* Se um nó não tiver uma função, o valor será definido como - (traço).
+
+
+|===
+
+
+== Exibir informações sobre nós estrangulados
+
+Na página *nós estrangulados*, disponível no painel lateral, você pode visualizar informações de todos os nós com limitação superior a 1% nos últimos 30 dias para a empresa selecionada.
+
+Você tem a opção de visualizar nós com um tempo de limitação *High*, *Limited* ou *Combined* (alto e limitado). Você também pode exibir descrições para a tabela de limitação de nó e as opções de limitação alta, limitada e combinada selecionando o image:description.PNG["descrição"] ícone, como mostrado no exemplo a seguir:
+
+image:throttled_nodes.PNG["Descrições de tempos de estrangulamento e de tempos de estrangulamento"]
+
+Saiba mais sobre as informações disponíveis para nós estrangulados.
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| ID do cluster | Número de cluster atribuído quando o cluster é criado. 
+
+
+| Cluster | Nome atribuído ao cluster. 
+
+
+| ID de nó | ID gerado pelo sistema para o nó. 
+
+
+| Nome | O nome do nó gerado pelo sistema. 
+
+
+| Tipo | Mostra o tipo de modelo do nó. 
+
+
+| Versão | Versão do software Element em execução no nó. 
+
+
+ a| 
+* Visualização de tempo de alta limitação*
+
+
+
+| Acelerador Alto duram 24 horas | A porcentagem de alta limitação de nós nas últimas 24 horas. 
+
+
+| Alta aceleração últimos 7 dias | A porcentagem de alta limitação de nós nos últimos 7 dias. 
+
+
+| Alta aceleração últimos 14 dias | A porcentagem de alta limitação de nós nos últimos 14 dias. 
+
+
+| Alta aceleração últimos 30 dias | A porcentagem de alta limitação de nós nos últimos 30 dias. 
+
+
+ a| 
+* Visualização limitada do tempo de limitação*
+
+
+
+| Acelerador limitado duram 24 horas | A porcentagem de limitação limitada de nós nas últimas 24 horas. 
+
+
+| Acelerador limitado últimos 7 dias | A porcentagem de limitação limitada de nós nos últimos 7 dias. 
+
+
+| Acelerador limitado últimos 14 dias | A porcentagem de limitação limitada de nós nos últimos 14 dias. 
+
+
+| Acelerador limitado últimos 30 dias | A porcentagem de limitação limitada de nós nos últimos 30 dias. 
+
+
+ a| 
+* Visualização combinada do tempo de limitação*
+
+
+
+| Acelerador combinado durar 24 horas | A porcentagem de limitação combinada de nós nas últimas 24 horas. 
+
+
+| Aceleração combinada últimos 7 dias | A porcentagem de limitação combinada de nós nos últimos 7 dias. 
+
+
+| Aceleração combinada últimos 14 dias | A porcentagem de limitação combinada de nós nos últimos 14 dias. 
+
+
+| Aceleração combinada últimos 30 dias | A porcentagem de limitação combinada de nós nos últimos 30 dias. 
+
+
+| Taxa de transferência média durar 30 minutos | Soma de throughput médio executado nos últimos 30 minutos em relação a todos os volumes que têm esse nó como primário. 
+
+
+| Média de IOPS duram 30 min | Soma do número médio de IOPS executado nos últimos 30 minutos em relação a todos os volumes que têm esse nó como primário. 
+
+
+| Latência média (µs) duram 30 minutos | O tempo médio em microssegundos, medido nos últimos 30 minutos, para concluir as operações de leitura e gravação em todos os volumes que têm esse nó como principal. Para relatar essa métrica com base em volumes ativos, somente valores de latência não zero são usados. 
+|===
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]
