@@ -1,0 +1,151 @@
+---
+permalink: task-active-iq-volume-performance.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, volume, performance 
+summary: Saiba mais sobre como visualizar detalhes de desempenho de volume no SolidFire Active IQ. 
+---
+= Desempenho de volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Na página *Volumes*, você pode visualizar detalhes sobre cada volume e ver seus gráficos de desempenho:
+
+* <<Ver detalhes individuais do volume>>
+* <<Ver gráficos de desempenho de volume individuais>>
+
+
+
+
+== Ver detalhes individuais do volume
+
+Na página *volumes*, você pode ver mais informações para um volume individual.
+
+.Passos
+. Selecione *volumes* > *volumes ativos*.
+. Na coluna ações, selecione o image:more_information.PNG["Mais informações"] ícone do volume desejado e selecione *Exibir detalhes*.
+
+
+Depois de abrir a página para o volume ativo, pode visualizar dados de volume recentes a partir da barra de informações.
+
+[cols="25,75"]
+|===
+| Rumo | Descrição 
+
+
+| ID da conta | ID gerado pelo sistema para o volume. 
+
+
+| Tamanho do volume | Tamanho total do volume. 
+
+
+| Capacidade utilizada  a| 
+Mostra o quão cheio o volume está.
+
+
+
+| IOPS médio | Número médio de IOPS executado em relação ao volume nos últimos 30 minutos. 
+
+
+| Taxa de transferência média | Taxa de transferência média executada em relação ao volume nos últimos 30 minutos. 
+
+
+| Latência média | O tempo médio, em microssegundos, para concluir as operações de leitura e gravação no volume nos últimos 30 minutos. Para obter mais informações, consulte este https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_is_read_and_write_latency_measured_in_Element_Software_%3F["Artigo da KB"^]. 
+
+
+2+| Você pode ver detalhes adicionais no menu suspenso *Mostrar Detalhes do volume*. 
+
+
+| Acesso | As permissões de leitura/gravação atribuídas ao volume. 
+
+
+| Grupos de acesso | Grupos de acesso de volume associados. 
+
+
+| Blocos não Zero | Número total de 4KiB blocos com dados após a última rodada de operação de coleta de lixo ter sido concluída. 
+
+
+| Zero blocos | Número total de 4KiB blocos sem dados após a última rodada de operação de coleta de lixo ter sido concluída. 
+
+
+| Contagem de instantâneos | O número de instantâneos associados. 
+
+
+| IOPS mín | O número mínimo de IOPS garantido para o volume. 
+
+
+| IOPS máx | O número máximo de IOPS permitido para o volume. 
+
+
+| IOPS de explosão | O número máximo de IOPS permitido durante um curto período de tempo. 
+
+
+| 512e ativado | Identifica se 512e está ativado em um volume. 
+
+
+| Acelerador de QoS | Representa a limitação atual para o volume. O valor não inclui limitação histórica no volume. 
+
+
+| Código nó principal | Nó principal para este volume. 
+
+
+| ID nó secundário | Lista de nós secundários para este volume. Podem ser valores múltiplos durante estados transitórios, como a mudança de nós secundários, mas geralmente terão um único valor. 
+
+
+| Volumes emparelhados | Indica se um volume foi emparelhado ou não. 
+
+
+| Crie o tempo | A hora em que a tarefa de criação de volume foi concluída. 
+
+
+| Tamanho do bloco | Tamanho dos blocos no volume. 
+
+
+| IQN | O nome qualificado iSCSI (IQN) do volume. 
+
+
+| ScsiEUIDeviceID | Identificador de dispositivo SCSI exclusivo globalmente para o volume no formato EUI-64 baseado em 16 bytes. 
+
+
+| ScsiNAADeviceID | Identificador de dispositivo SCSI exclusivo globalmente para o volume no formato estendido registrado IEEE NAA. 
+
+
+| Atributos | Lista de pares Nome/valor no formato de objeto JSON. 
+|===
+
+
+== Ver gráficos de desempenho de volume individuais
+
+Na página *volumes*, você pode visualizar a atividade de desempenho de cada volume em um formato gráfico. Essas informações fornecem estatísticas em tempo real para taxa de transferência, IOPS, latência, profundidade da fila, tamanho médio de e/S e capacidade para cada volume.
+
+.Passos
+. Selecione *Volumes* > *Desempenho do volume*.
+. Na lista suspensa *Volume*, selecione uma ID de volume para visualizar detalhes desse volume.  Observe que a lista suspensa Volume pode ser pesquisada por ID do volume.
+. À esquerda, selecione um gráfico de miniaturas para ver os gráficos de desempenho em detalhe. Pode visualizar os seguintes gráficos:
++
+** Taxa de transferência
+** IOPS
+** Latência
+** Profundidade da fila
+** Tamanho médio de e/S
+** Capacidade
++
+Você também pode visualizar a *Média*, *Mín* ou *Máx* de cada gráfico.  Observe que Média é a visualização padrão.
+
+
+
+. (Opcional) você pode exportar cada gráfico como um arquivo CSV selecionando o image:export_button.PNG["botão export (exportar)"] ícone.
+. Como alternativa, você pode selecionar *Volumes* > *Volumes ativos*.
+. Na coluna *ações*, selecione o image:more_information.PNG["Mais informações"] ícone do volume desejado e selecione *Exibir detalhes*.
++
+Uma página separada é aberta para exibir uma linha do tempo ajustável, que é sincronizada com os gráficos de desempenho.
+
+
+
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

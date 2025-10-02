@@ -16,7 +16,8 @@ Saiba mais sobre o menu suspenso *Reporting* no painel lateral:
 * <<Capacidade>>
 * <<Eficiência>>
 * <<Desempenho>>
-* <<Registo de erros>>
+* <<Utilização de nós>>
+* <<Registro de erros>>
 * <<Eventos>>
 * <<Alertas>>
 * <<Sessões iSCSI>>
@@ -132,7 +133,15 @@ Na página *Performance* do menu suspenso *Reporting* para um cluster selecionad
 
 
 
-== Registo de erros
+== Utilização de nós
+
+Na página *Utilização do nó* do menu suspenso *Relatórios* de um cluster selecionado, você pode selecionar e visualizar cada nó.
+
+A partir do Elemento 12.8, as informações de utilização do nó estão disponíveis como `nodeHeat` usando o `GetNodeStats` e `ListNodeStats` Métodos de API.  O `nodeHeat` objeto é um membro do `nodeStats` objeto e exibe informações de utilização do nó com base na proporção do IOPS total primário ou do IOPS total em relação ao IOPS configurado, calculado em média ao longo do tempo.  O gráfico de utilização do nó mostra isso como uma porcentagem derivada da métrica `recentPrimaryTotalHeat` .
+
+
+
+== Registro de erros
 
 Na página *Registo de erros* do menu pendente *Relatório* para um cluster selecionado, pode visualizar informações sobre erros não resolvidos ou que foram comunicados pelo cluster. Essas informações podem ser filtradas e exportadas para um arquivo CSV (valores separados por vírgulas). Para obter detalhes sobre os níveis de gravidade, consulte o https://docs.netapp.com/us-en/element-software/index.html["Documentação do Element Software"^].
 
@@ -179,7 +188,7 @@ As seguintes informações são comunicadas para o cluster selecionado.
 
 == Eventos
 
-Na página *Eventos* do menu suspenso *relatórios* para um cluster selecionado, você pode exibir informações sobre eventos-chave que ocorreram no cluster. Essas informações podem ser filtradas e exportadas para um arquivo CSV.
+Na página *Eventos* do menu suspenso *Relatórios* de um cluster selecionado, você pode selecionar entre as guias *Eventos* e *gcEvents* para visualizar informações sobre os principais eventos que ocorreram no cluster.  Por padrão, selecionar *Eventos* mostra todos os eventos, exceto gcEvents, para melhorar a legibilidade.  Para ver todos os eventos, incluindo gcEvents, selecione a aba *gcEvents*.  Essas informações podem ser filtradas e exportadas para um arquivo CSV.
 
 As seguintes informações são comunicadas para o cluster selecionado.
 
@@ -194,7 +203,7 @@ As seguintes informações são comunicadas para o cluster selecionado.
 | Hora do evento | A hora em que o evento ocorreu. 
 
 
-| Tipo | O tipo de evento que está sendo registrado, por exemplo, evento de API ou eventos de clone. Consulte https://docs.netapp.com/us-en/element-software/index.html["Documentação do Element Software"^] para obter mais informações. 
+| Tipo | O tipo de evento que está sendo registrado, por exemplo, eventos de API, eventos de clone ou eventos de gc.  Veja o https://docs.netapp.com/us-en/element-software/index.html["Documentação do Element Software"^] para mais informações. 
 
 
 | Mensagem | Mensagem associada ao evento. 

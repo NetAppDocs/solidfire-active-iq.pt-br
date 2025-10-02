@@ -1,0 +1,47 @@
+---
+permalink: task-active-iq-cluster-options.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, dashboard, all, cluster, options, archive, suppress, upgrade 
+summary: Saiba mais sobre as ações de cluster no SolidFire Active IQ. 
+---
+= Ações de Cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Na página *Painel* da *Visualização de todos os clusters*, você pode visualizar as opções de suporte de cluster sobre os clusters associados à sua conta.
+
+.Passos
+. Selecione *Visualização de todos os clusters* > *Visão geral*.
+. Na coluna *Ações*, selecione oimage:more_information.PNG["Mais informações"] ícone para o cluster que você deseja.
+. Selecione uma das seguintes opções:
++
+.. *Solicitar suporte de atualização* envia uma solicitação de atualização do software do cluster.  Você pode selecionar software de elemento, firmware de armazenamento, firmware de computação ou serviços de gerenciamento de nó de gerenciamento.  Você insere suas informações de contato, quaisquer comentários e um horário de retorno.
++
+image:request_support.png["Solicitar suporte de atualização"]
+
+.. *Archive Cluster* arquiva o cluster.  Uma janela é aberta fornecendo avisos sobre problemas relacionados ao arquivamento de um cluster que pode precisar ser desarquivado posteriormente.
++
+image:archive_cluster2.png["Cluster de Arquivos"]
+
+.. *Suprimir Cluster* interrompe alertas repetidos.  Você escolhe o tipo de alerta, hora de início e duração.  Você também pode ver as regras de supressão de alertas em execução nesta janela.
++
+image:suppress_cluster.png["Suprimir Cluster"]
+
++
+Ver link:task-active-iq-alerts.html#suppress-cluster-notifications["Suprimir notificações de cluster"] para maiores informações.
+
+
+
+
+
+
+NOTE: Se o cluster que você está procurando não estiver disponível, esteja ciente de que os clusters que estiverem inativos por 180 dias ou mais serão arquivados automaticamente.  Entre em contato com o suporte para obter mais assistência.
+
+
+
+== Encontre mais informações
+
+https://www.netapp.com/support-and-training/documentation/["Documentação do produto NetApp"^]

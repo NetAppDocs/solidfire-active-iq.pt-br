@@ -52,7 +52,13 @@ Na página *Dashboard* do *All clusters View*, você pode exibir detalhes de des
 
 
 | Última atualização | Hora e data em que o cluster mais recente é atualizado. 
+
+
+| Ações | Opções para solicitar suporte de atualização para um cluster, arquivar um cluster e suprimir um cluster 
 |===
+
+NOTE: Se o cluster que você está procurando não estiver disponível, esteja ciente de que os clusters que estiverem inativos por 180 dias ou mais serão arquivados automaticamente.  Entre em contato com o suporte para obter mais assistência.
+
 
 
 == Encontre mais informações

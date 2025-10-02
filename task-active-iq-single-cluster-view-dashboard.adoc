@@ -94,6 +94,11 @@ Expanda a barra de informações selecionando *Mostrar Detalhes* para mostrar es
 * Vvols
 * Sessões iSCSI
 * Total mínimo de IOPS configurado
+* Rebalanceamento de IOPS
++
+
+NOTE: A partir dos clusters do Elemento 12.8, um campo adicional *Rebalanceamento de IOPS* é fornecido.  Se a opção para todo o cluster estiver habilitada, cada volume mostrará esse parâmetro.  O valor deste campo é verdadeiro ou falso.  Este campo é usado para balancear fatias de acordo com a carga real, em vez das configurações mínimas de IOPS.
+
 
 
 

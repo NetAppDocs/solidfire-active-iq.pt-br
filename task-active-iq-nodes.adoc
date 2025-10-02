@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: solidfire, active, iq, nodes 
 summary: Saiba mais sobre a página ative Nodes no SolidFire Active IQ. 
 ---
-= Nós
+= Cabeça de nós
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -63,6 +63,15 @@ O status do nó:
 | Tipo | Exibe o tipo de modelo do nó. 
 
 
+| Versão de configuração da plataforma | A versão de configuração do chassi no qual você está executando. 
+
+
+| Versão BIOS | A versão do BIOS para o hardware do seu nó. 
+
+
+| Revisão de firmware BMC | A revisão do firmware atualmente em execução no Baseboard Management Controller (BMC). 
+
+
 | Versão | Versão do software Element em execução no nó. 
 
 
@@ -96,6 +105,15 @@ Identifica a função que o nó tem no cluster:
 * Se um nó não tiver uma função, o valor será definido como - (traço).
 
 
+
+
+| Fim da disponibilidade | Data em que os nós não estão mais disponíveis para compra, mas ainda são suportados. 
+
+
+| Fim do suporte de hardware | Data em que o hardware não é mais suportado. 
+
+
+| Fim do suporte de software | Data em que o software não é mais suportado. 
 |===
 
 
@@ -151,6 +169,15 @@ O status do nó:
 | Número de série | Número de série exclusivo atribuído ao nó. 
 
 
+| Versão de configuração da plataforma | A versão de configuração do chassi no qual você está executando. 
+
+
+| Versão BIOS | A versão do BIOS para o hardware do seu nó. 
+
+
+| Revisão de firmware BMC | A revisão do firmware atualmente em execução no Baseboard Management Controller (BMC). 
+
+
 | Versão | Versão do software Element em execução no nó. 
 
 
@@ -177,6 +204,15 @@ Identifica a função que o nó tem no cluster:
 * Se um nó não tiver uma função, o valor será definido como - (traço).
 
 
+
+
+| Fim da disponibilidade | Data em que os nós não estão mais disponíveis para compra, mas ainda são suportados. 
+
+
+| Fim do suporte de hardware | Data em que o hardware não é mais suportado. 
+
+
+| Fim do suporte de software | Data em que o software não é mais suportado. 
 |===
 
 
@@ -207,7 +243,22 @@ Selecione *Compute* para exibir as seguintes informações sobre os nós de comp
 | IP do vCenter | Endereço IP do vCenter Server. 
 
 
+| Versão BIOS | A versão do BIOS para o hardware do seu nó. 
+
+
+| Revisão de firmware BMC | A revisão do firmware atualmente em execução no Baseboard Management Controller (BMC). 
+
+
 | VMotion IP | Endereço IP de rede do VMware vMotion do nó de computação. 
+
+
+| Fim da disponibilidade | Data em que os nós não estão mais disponíveis para compra, mas ainda são suportados. 
+
+
+| Fim do suporte de hardware | Data em que o hardware não é mais suportado. 
+
+
+| Fim do suporte de software | Data em que o software não é mais suportado. 
 |===
 
 

@@ -40,8 +40,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="e08d25d28f81e2e8f6aa3ba1cc3bdf0d" category="summary">Saiba mais sobre como visualizar detalhes do volume no SolidFire Active IQ.</block>
   <block id="f4ae560c60fc8bb0d0b6ab851ae1869e" category="doc">Volumes ativos</block>
-  <block id="557b10f01522670a114659a8ae978c6a" category="paragraph">Na página *volumes*, você pode ver detalhes sobre volumes ativos, volumes individuais e gráficos de desempenho:</block>
-  <block id="1016ff0c0a0a25fcb2703c537ddb1e6c" category="list-text"><block ref="2159a3d30b5a28e3601f66bf8bc43e89" category="inline-xref-macro-rx"></block></block>
   <block id="88d327dc22b871bfeab499b388172e6c" category="list-text"><block ref="b33c17c502ed5103f0f2c7e22661f47f" category="inline-xref-macro-rx"></block></block>
   <block id="d7e4226561da664078446368bf24e413" category="list-text"><block ref="2def3383d458d995413cf567e10cad54" category="inline-xref-macro-rx"></block></block>
   <block id="324ef602c957b3ee013db702dc88ebbd" category="section-title">Ver detalhes do volume ativo</block>
@@ -323,7 +321,6 @@
   <block id="54337ee0f200dfcaa388f569168f76f4" category="list-text">Para um único cluster, selecione o menu ações para o cluster e selecione *Terminar supressão*.</block>
   <block id="9ef78003c570ffd4cf0f0340af7c6c32" category="list-text">Para vários clusters, selecione os clusters e, em seguida, selecione *Terminar supressões selecionadas*.</block>
   <block id="ccc56a6622f5dccc8b39bf717c5273e9" category="section-title">E-mail de notificação de alerta</block>
-  <block id="8f7bdd75076dbc076948c8a43fa2529c" category="paragraph">Os assinantes dos alertas do SolidFire Active IQ recebem e-mails de status diferentes para cada alerta que é acionado no sistema. Existem três tipos de e-mails de status associados a alertas:</block>
   <block id="bcbb59ba38b8d8a53386ea9e5e619fa2" category="cell">Novo e-mail de alerta</block>
   <block id="df4912f6cebf8a31418b4aeb4d73f330" category="cell">Este tipo de e-mail é enviado quando um alerta é acionado.</block>
   <block id="ce547e1ced608d92b9c86ba4168ed5b6" category="cell">E-mail de alerta de lembrete</block>
@@ -338,7 +335,6 @@
   <block id="02f29ba56a590349572ebac9b1a83e08" category="list-text">Alerta não resolvido:<block ref="cbff79d1795ca1e9a353eee840908274" prefix=" " category="inline-code"></block></block>
   <block id="a5bfb2935db6ff4645be98f354d7b7d8" category="list-text">Avaria de alerta resolvida:<block ref="7cf2795233dfd27a25e55bb5b3532d37" prefix=" " category="inline-code"></block></block>
   <block id="988e4fecbbb516a07ee027b7174a31c3" category="inline-image-macro">Exemplo de e-mail</block>
-  <block id="39144423b896be1779d0593a1a694501" category="paragraph">O conteúdo do e-mail de notificação será semelhante ao seguinte exemplo: <block ref="eaf8f47e3bf444c8f0ead8244ee8b427" category="inline-image-macro-rx" type="image"></block></block>
   <block id="679ac3cb12c1714537521f1e0ad3c546" category="summary">Saiba mais sobre o painel visualização de todos os clusters no SolidFire Active IQ.</block>
   <block id="98aecf6b1b7c9ebbb25261990e7f5542" category="doc">Todos os clusters View dashboard</block>
   <block id="387397fa94879a4b5ee9efc8798efed4" category="paragraph">Na página *Dashboard* do *All clusters View*, você pode exibir detalhes de desempenho, capacidade e estatísticas de cluster sobre os clusters associados à sua conta.</block>
@@ -679,7 +675,6 @@
   <block id="e4cc71b4823b76c224a383262dc80aca" category="list-text"><block ref="7a9ac211092ddba1abc61bd090372f98" category="inline-xref-macro-rx"></block></block>
   <block id="734eabe2addee5372e15b9c34555e5e0" category="list-text"><block ref="e703d8bc1423ab84438011151be894fa" category="inline-xref-macro-rx"></block></block>
   <block id="5006859779c56a21edef19812da1ff66" category="list-text"><block ref="4066a512f7263c8cb8f08426d6cd1e53" category="inline-xref-macro-rx"></block></block>
-  <block id="6aad306ead558153abf0bbcd2c1c5786" category="list-text"><block ref="6dba2954762b3236d5a97f1dc92e8ec2" category="inline-xref-macro-rx"></block></block>
   <block id="4afc0e02fe14d9f5780c02d80050747b" category="list-text"><block ref="779f08b1a90156e2c067eb073fcd3c37" category="inline-xref-macro-rx"></block></block>
   <block id="4e55dab9a83f8ddfa70cb1e83169ce6e" category="list-text"><block ref="f1136520b649acd8432083736a1e7fff" category="inline-xref-macro-rx"></block></block>
   <block id="a86610dccf7042b91145bd4dae9baacf" category="list-text"><block ref="646007c2405bb3de9e50295a0edb4bee" category="inline-xref-macro-rx"></block></block>
@@ -728,7 +723,6 @@
   <block id="f1f189e77e9adb961b6f46a1b6391503" category="cell">O efeito da compressão de dados nos dados armazenados no cluster. Diferentes tipos de dados são compatados a taxas diferentes. Por exemplo, os dados de texto e a maioria dos documentos são facilmente compatados para um espaço menor, mas as imagens de vídeo e gráficas normalmente não o fazem.</block>
   <block id="9446a98ad14416153cc4d45ab8b531bf" category="section-title">Desempenho</block>
   <block id="c57c8fec3cce16f2bb8fbc04182cf1da" category="paragraph">Na página *Performance* do menu suspenso *Reporting* para um cluster selecionado, você pode exibir detalhes sobre o uso do IOPS, a taxa de transferência e a utilização do cluster selecionando a categoria e a filtragem com base no período de tempo.</block>
-  <block id="2365f9d6614b9f34f41e33f1f46329b2" category="section-title">Registo de erros</block>
   <block id="34dca4cae1eb92f7ac0cc3fed62671e8" category="paragraph">Na página *Registo de erros* do menu pendente *Relatório* para um cluster selecionado, pode visualizar informações sobre erros não resolvidos ou que foram comunicados pelo cluster. Essas informações podem ser filtradas e exportadas para um arquivo CSV (valores separados por vírgulas). Para obter detalhes sobre os níveis de gravidade, consulte o<block ref="b84733eb90b32c79b9a7de9908517697" category="inline-link-rx"></block>.</block>
   <block id="95c682d54021d66b0bb75a594cd6cd25" category="paragraph">As seguintes informações são comunicadas para o cluster selecionado.</block>
   <block id="49c22828420491176562be75f22a3f05" category="cell">ID para uma avaria no grupo de instrumentos.</block>
@@ -745,12 +739,10 @@
   <block id="6fa39b864d7c75955b6815cda59e5e38" category="cell">Um código descritivo que indica o que causou a falha.</block>
   <block id="b3d26412e5bd7f458a180d44450aaef7" category="cell">Descrição da avaria com detalhes adicionais.</block>
   <block id="87f9f735a1d36793ceaecd4e47124b63" category="section-title">Eventos</block>
-  <block id="3e7300982fd04a6b96ab485ce1439998" category="paragraph">Na página *Eventos* do menu suspenso *relatórios* para um cluster selecionado, você pode exibir informações sobre eventos-chave que ocorreram no cluster. Essas informações podem ser filtradas e exportadas para um arquivo CSV.</block>
   <block id="1be7f4094822039b4634c93c23dd7efb" category="cell">ID do evento</block>
   <block id="152d2891395833d77c6475036e42b690" category="cell">ID exclusivo associado a cada evento.</block>
   <block id="565a343ef221845e92de20cbe1e7e1f1" category="cell">Hora do evento</block>
   <block id="d7d243cdd4f9855c08d4d07446b1a498" category="cell">A hora em que o evento ocorreu.</block>
-  <block id="d6850e0c5bcba3e6b1fdd913143db620" category="cell">O tipo de evento que está sendo registrado, por exemplo, evento de API ou eventos de clone. Consulte<block ref="b84733eb90b32c79b9a7de9908517697" category="inline-link-rx"></block> para obter mais informações.</block>
   <block id="4c2a8fe7eaf24721cc7a9f0175115bd4" category="cell">Mensagem</block>
   <block id="7fe2911af82fa5c0c94c5122f326e2ee" category="cell">Mensagem associada ao evento.</block>
   <block id="e6bc3742b9adcf64569e2b8e6c4a3cfd" category="cell">O serviço que relatou o evento (se aplicável).</block>
@@ -1146,4 +1138,59 @@
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Visão geral</block>
   <block id="c5562ce2e22a86c247849904ecef3dc8" category="sidebar">Relatórios</block>
   <block id="e79aba466781e2b47a4a51d4a5e2f1f7" category="sidebar">Avisos legais</block>
+  <block id="0e0407e74a36d220d8d01a7e581ac795" category="paragraph">Na página *Volumes*, você pode visualizar detalhes sobre volumes ativos.</block>
+  <block id="c5e007259f055d88aff44c7e7eb85e17" category="cell">Rebalanceamento de IOPS</block>
+  <block id="2e2903fd988e840f2774b88b734ca722" category="cell">A partir dos clusters do Elemento 12.8, um campo adicional *Rebalanceamento de IOPS* é fornecido.  Se a opção para todo o cluster estiver habilitada, cada volume mostrará esse parâmetro.  O valor deste campo é verdadeiro ou falso.  Este campo é usado para balancear fatias de acordo com a carga real, em vez das configurações mínimas de IOPS.</block>
+  <block id="7e2fefface3d022a94f042603758769d" category="paragraph">Os assinantes dos alertas do SolidFire Active IQ recebem e-mails de status para qualquer alerta disparado no sistema.  Existem três tipos de e-mails de status associados aos alertas:</block>
+  <block id="df2f1d4e26997571504930f7881d7598" category="paragraph">Várias notificações são agrupadas em um único e-mail, com as falhas mais graves no topo do e-mail, semelhante ao exemplo a seguir:</block>
+  <block id="d3a726cfbfd787a4150a9bf2e77de90b" category="paragraph"><block ref="d3a726cfbfd787a4150a9bf2e77de90b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0470696a2f69d02c74afc4c93118ad12" category="cell">Opções para solicitar suporte de atualização para um cluster, arquivar um cluster e suprimir um cluster</block>
+  <block id="63147cba714040ab7d8cf07d130bd835" category="admonition">Se o cluster que você está procurando não estiver disponível, esteja ciente de que os clusters que estiverem inativos por 180 dias ou mais serão arquivados automaticamente.  Entre em contato com o suporte para obter mais assistência.</block>
+  <block id="57361a95e39cbcaafab971ae0dce678b" category="summary">Saiba mais sobre as ações de cluster no SolidFire Active IQ.</block>
+  <block id="6a49df84084bb09ea3059dae3cb5efe2" category="doc">Ações de Cluster</block>
+  <block id="6f8445903cd24a142539abb22537456d" category="paragraph">Na página *Painel* da *Visualização de todos os clusters*, você pode visualizar as opções de suporte de cluster sobre os clusters associados à sua conta.</block>
+  <block id="803bd04c28e8ddbce0fa5bddbcb91b6e" category="list-text">Selecione *Visualização de todos os clusters* &gt; *Visão geral*.</block>
+  <block id="55f6426e00cc9b7875639726dfb00ecc" category="list-text">Na coluna *Ações*, selecione o<block ref="cdebc265529e000c5722a7028c8024ee" category="inline-image-macro-rx" type="image"></block> ícone para o cluster que você deseja.</block>
+  <block id="ed09bad7864ec765b3bccff9b87f25fb" category="list-text">Selecione uma das seguintes opções:</block>
+  <block id="2034077ecefc71b18f9abab8ef178053" category="list-text">*Solicitar suporte de atualização* envia uma solicitação de atualização do software do cluster.  Você pode selecionar software de elemento, firmware de armazenamento, firmware de computação ou serviços de gerenciamento de nó de gerenciamento.  Você insere suas informações de contato, quaisquer comentários e um horário de retorno.</block>
+  <block id="033edf9c4829d5d4bb6e789e4fa438cb" category="inline-image-macro">Solicitar suporte de atualização</block>
+  <block id="deaeee38c5159c79b835b544d55d6162" category="paragraph"><block ref="deaeee38c5159c79b835b544d55d6162" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f6419049436992d24c2bc5f4b3b740f" category="list-text">*Archive Cluster* arquiva o cluster.  Uma janela é aberta fornecendo avisos sobre problemas relacionados ao arquivamento de um cluster que pode precisar ser desarquivado posteriormente.</block>
+  <block id="cfe5d8c6afaa44a9423999d0a54be934" category="inline-image-macro">Cluster de Arquivos</block>
+  <block id="d2ceb9fd05d9c66f28eab3cac1f08acb" category="paragraph"><block ref="d2ceb9fd05d9c66f28eab3cac1f08acb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c1a28973e574645b0fce733c2502d0e9" category="list-text">*Suprimir Cluster* interrompe alertas repetidos.  Você escolhe o tipo de alerta, hora de início e duração.  Você também pode ver as regras de supressão de alertas em execução nesta janela.</block>
+  <block id="508c8cd823dd11ffac7c62ecfa1e9dcb" category="inline-image-macro">Suprimir Cluster</block>
+  <block id="c5fe1ae9d8c55b8320aa992bb82445e2" category="paragraph"><block ref="c5fe1ae9d8c55b8320aa992bb82445e2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="30d82a8dc5e56542395e2e46902687c5" category="inline-link-macro">Suprimir notificações de cluster</block>
+  <block id="e9d6310568300c2b5bdfc1b75f00fbf1" category="paragraph">Ver <block ref="1b2597a7d076344526683bbd38b2e815" category="inline-link-macro-rx"></block> para maiores informações.</block>
+  <block id="cab660678566f571a483f139f6b3519b" category="doc">Cabeça de nós</block>
+  <block id="72015d6336a13a9e5c52371b6bbc3c23" category="cell">Versão de configuração da plataforma</block>
+  <block id="bec68a405536dd08c3c502bf97734b15" category="cell">A versão de configuração do chassi no qual você está executando.</block>
+  <block id="682c3a446fbcfba9650aa520dcdd58f4" category="cell">Versão BIOS</block>
+  <block id="b18cf37f6fd55ff91b02536f96fc7920" category="cell">A versão do BIOS para o hardware do seu nó.</block>
+  <block id="cd53752f425d5c063da5e8f5f9b081ca" category="cell">Revisão de firmware BMC</block>
+  <block id="330ebf3da56a6e250861b69756cc352b" category="cell">A revisão do firmware atualmente em execução no Baseboard Management Controller (BMC).</block>
+  <block id="df2b0c09559e0968792698e21f76758e" category="cell">Fim da disponibilidade</block>
+  <block id="2c49eeb73346234419e6be26809e5cf1" category="cell">Data em que os nós não estão mais disponíveis para compra, mas ainda são suportados.</block>
+  <block id="af68c4fb58e6edf6c462a2e279e877fb" category="cell">Fim do suporte de hardware</block>
+  <block id="0503e725facea21a80767b2c223b1486" category="cell">Data em que o hardware não é mais suportado.</block>
+  <block id="41e82c4f7a216c22787aae8b40f48fd1" category="cell">Fim do suporte de software</block>
+  <block id="32e1c4050ee737a7e15048301bd61798" category="cell">Data em que o software não é mais suportado.</block>
+  <block id="1924fa4df8982e478bb39bd2b83540df" category="list-text"><block ref="2e2a57682469be8809edd68f144df110" category="inline-xref-macro-rx"></block></block>
+  <block id="bc5364a906799c5f63e6b5fa860f0988" category="list-text"><block ref="2e8180bccf300fb119ceff0c2b7cf834" category="inline-xref-macro-rx"></block></block>
+  <block id="61db2da61d6d3c389dec4533a09199d0" category="section-title">Utilização de nós</block>
+  <block id="756260b8bec932ea024a5184347c674d" category="paragraph">Na página *Utilização do nó* do menu suspenso *Relatórios* de um cluster selecionado, você pode selecionar e visualizar cada nó.</block>
+  <block id="f9fbdab90c1710ad671a069e26ad35e5" category="paragraph">A partir do Elemento 12.8, as informações de utilização do nó estão disponíveis como<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block> usando o<block ref="f26fbe9dd2d7f06608bbf6327141caa9" prefix=" " category="inline-code"></block> e<block ref="84b7393e47ffdee1d6a06f5067a7270c" prefix=" " category="inline-code"></block> Métodos de API.  O<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block> objeto é um membro do<block ref="d9bfbffd38f5f9686a85ef17e8138b5c" prefix=" " category="inline-code"></block> objeto e exibe informações de utilização do nó com base na proporção do IOPS total primário ou do IOPS total em relação ao IOPS configurado, calculado em média ao longo do tempo.  O gráfico de utilização do nó mostra isso como uma porcentagem derivada da métrica<block ref="3e970dc4a731d994269545ba0dc518ab" prefix=" " category="inline-code"></block> .</block>
+  <block id="7849cea71bafd18cc1a57bed0ef72ea0" category="section-title">Registro de erros</block>
+  <block id="d314a1c06f6b52eeeb045201e0970639" category="paragraph">Na página *Eventos* do menu suspenso *Relatórios* de um cluster selecionado, você pode selecionar entre as guias *Eventos* e *gcEvents* para visualizar informações sobre os principais eventos que ocorreram no cluster.  Por padrão, selecionar *Eventos* mostra todos os eventos, exceto gcEvents, para melhorar a legibilidade.  Para ver todos os eventos, incluindo gcEvents, selecione a aba *gcEvents*.  Essas informações podem ser filtradas e exportadas para um arquivo CSV.</block>
+  <block id="3368c376501ee61bcede19a817aa74e9" category="cell">O tipo de evento que está sendo registrado, por exemplo, eventos de API, eventos de clone ou eventos de gc.  Veja o<block ref="b84733eb90b32c79b9a7de9908517697" category="inline-link-rx"></block> para mais informações.</block>
+  <block id="7c7e361e2555699afd683b33bf264473" category="summary">Saiba mais sobre como visualizar detalhes de desempenho de volume no SolidFire Active IQ.</block>
+  <block id="a86c1de3e38559902af8a77c138a08f4" category="doc">Desempenho de volume</block>
+  <block id="37d8a66cb0394ea8e1b9d25fd47bda10" category="paragraph">Na página *Volumes*, você pode visualizar detalhes sobre cada volume e ver seus gráficos de desempenho:</block>
+  <block id="e5d690965f51bb182d08b00358fc5556" category="list-text">Selecione *Volumes* &gt; *Desempenho do volume*.</block>
+  <block id="d408950e40a87c3ce55bc0c5f3429a36" category="list-text">Na lista suspensa *Volume*, selecione uma ID de volume para visualizar detalhes desse volume.  Observe que a lista suspensa Volume pode ser pesquisada por ID do volume.</block>
+  <block id="febcd3b075cef4e94a1eb82bfd322990" category="paragraph">Você também pode visualizar a *Média*, *Mín* ou *Máx* de cada gráfico.  Observe que Média é a visualização padrão.</block>
+  <block id="1c81c21988d2d2837cde901d44b4346b" category="list-text">Como alternativa, você pode selecionar *Volumes* &gt; *Volumes ativos*.</block>
+  <block id="23de2a1ae75bcf2f4de17d30fe859a05" category="sidebar">Painel de visualização de todos os clusters</block>
+  <block id="2938c7f7e560ed972f8a4f68e80ff834" category="sidebar">Painel</block>
 </blocks>

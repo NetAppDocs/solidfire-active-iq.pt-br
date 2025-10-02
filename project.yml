@@ -6,7 +6,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-  langs: pt-br,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+  langs: pt-br,us-en,de-de,es-es,fr-fr,it-it,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
   - title: NetApp SolidFire Active IQ
@@ -29,8 +29,12 @@ sidebar:
       entries:
       - title: Visão geral
         url: "/task-active-iq-all-clusters-view-overview.html"
-      - title: Todos os clusters View dashboard
-        url: "/task-active-iq-all-clusters-view-dashboard.html"
+      - title: Painel de visualização de todos os clusters
+        entries:
+        - title: Painel
+          url: "/task-active-iq-all-clusters-view-dashboard.html"
+        - title: Ações de Cluster
+          url: "/task-active-iq-cluster-options.html"
       - title: Alertas
         url: "/task-active-iq-alerts.html"
       - title: Licenciamento de capacidade
@@ -57,6 +61,8 @@ sidebar:
         url: "/task-active-iq-active-volumes.html"
       - title: Instantâneos e agendas de instantâneos
         url: "/task-active-iq-snapshots-and-schedules.html"
+      - title: Desempenho de volume
+        url: "/task-active-iq-volume-performance.html"
     - title: Replicação
       url: "/task_active_iq_replication.html"
     - title: Volumes virtuais
